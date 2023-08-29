@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Elementos de Formulários</title>
+    </head>
+    <body>
+        /* CAIXA DE ENTRADA*/
+        <input type="text" name="nome" size="15" maxlength="30" />
+        <br />
+        /* CAIXA DE SENHA*/
+        <input type="password" name="senha" size="15" maxlength="30" />
+        <br />
+        /*Área de texto*/
+        <textarea name="mensagem" rows="5" cols="20"></textarea>
+        <br />
+        /*Botão de opção*/
+        <input type="radio" name="sexo" value="masculino" checked="checked" />Masculino
+        <input type="radio" name="sexo" value="feminino" />Feminino
+        <br />
+        /*Checkbox*/
+        <input type="checkbox" name="interesse" value="esporte" checked="checked" />Esporte
+        <input type="checkbox" name="interesse" value="cinema" />Cinema
+        <input type="checkbox" name="interesse" value="compras" />Compras
+        <br />
+        /*Caixa de Seleção Simples*/
+        <select name="estado">
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br />
+        /*Caixa de Seleção Múltipla*/
+        <select name="estado" multiple="multiple">
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br />
+        /*Envio de Arquivo*/
+        <input type="file" name="nome" />
+        <br />
+        /*Botão de Envio*/
+        <input type="submit" name="enviar" value="Enviar" />
+        <br />
+        /*Botão de Imagem*/
+        <input type="image" src="imagem.png" />
+        <br />
+        /*Botão*/
+        <button type="button">Clique aqui</button>
+        <br />
+        /*Campo Oculto*/
+        <input type="hidden" name="id" value="123" />
+        <br />
+        /*Rótulo*/
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" />
+        <br />
+</html>
