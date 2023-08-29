@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Novos Elementos a partir do HTML5</title>
+    </head>
+    <body>
+        <form name="subscription">
+            <fieldset>
+                <legend>
+                    Preencha algumas informações sobre você:
+                </legend>
+         
+                <label class="label" for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Exemplo: Ana" 
+                            title="Seu nome é requerido" required>
+         
+              <label class="label" for="email">E-mail:</label>
+              <input type="email" name="email" id="email" placeholder="Exemplo: a@b.com.br" 
+                         title="Um email válido é requerido" required>
+         
+              <label class="label" for="twitter">Twitter:</label>
+              <input type="text" name="twitter" id="twitter" placeholder="Exemplo: @abc" 
+                            title="Seu Twitter deve começar com @" pattern="@[a-zA-Z0-9]+">
+         
+            </fieldset>
+            <input type="submit" value="Enviar" />
+         </form>
+    </body>
+</html>

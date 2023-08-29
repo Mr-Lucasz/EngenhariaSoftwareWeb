@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercício 2</title>
+    </head>
+    <body>
+        <form class="form">
+            <h1 class="h1-form">ENTRE EM CONTATO</h1>
+            <br class="name-email-field">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Nome" title="Seu nome é requerido" required>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="E-mail:">
+            </div>
+            <div id="radioButton-sexo">
+                <span>Sexo:</span>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="feminino" value="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="mensagem-input">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" cols="20"></textarea>
+            </div>
+            <div id="checkbox-optinal-id">
+            <input type="checkbox" name="CheckboxOptional" id="CheckboxOptional" value="CheckboxOptional" checked>
+            <label for="CheckboxOptional">Gostaria de receber notícias do site.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 30%;
+                height: 20%;
+                background-color: #f5f5f5;
+                justify-content: center;
+                padding: 1rem;
+                box-sizing: border-box;
+        }
+            .h1-form{
+                font-size: 1.75rem;
+                color: #000;
+                margin: 1rem;
+                border-radius: 2rem;
+            }
+            .name-email-field{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .mensagem-input{
+                display: flex;
+                flex-direction: column;
+                width: 65%;
+                height: 4rem;
+
+            }
+            
+        </style>
+    </body>
+</html>
