@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Exercício 2</title>
-    </head>
-    <body>
-        <form class="form">
-            <h1 class="h1-form">ENTRE EM CONTATO</h1>
-            <br class="name-email-field">
-                <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" placeholder="Nome" title="Seu nome é requerido" required>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="E-mail:">
-            </div>
-            <div id="radioButton-sexo">
-                <span>Sexo:</span>
-                <input type="radio" name="sexo" id="masculino" value="masculino">
-                <label for="masculino">Masculino</label>
-                <input type="radio" name="sexo" id="feminino" value="feminino">
-                <label for="feminino">Feminino</label>
-            </div>
-            <div class="mensagem-input">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" rows="5" cols="20"></textarea>
-            </div>
-            <div id="checkbox-optinal-id">
-            <input type="checkbox" name="CheckboxOptional" id="CheckboxOptional" value="CheckboxOptional" checked>
-            <label for="CheckboxOptional">Gostaria de receber notícias do site.</label>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-        <style>
-            body{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .form{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                width: 30%;
-                height: 20%;
-                background-color: #f5f5f5;
-                justify-content: center;
-                padding: 1rem;
-                box-sizing: border-box;
-        }
-            .h1-form{
-                font-size: 1.75rem;
-                color: #000;
-                margin: 1rem;
-                border-radius: 2rem;
-            }
-            .name-email-field{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-            }
-            .mensagem-input{
-                display: flex;
-                flex-direction: column;
-                width: 65%;
-                height: 4rem;
-
-            }
-            
-        </style>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <form class="form">
+      <h1 class="h1-form">ENTRE EM CONTATO</h1>
+      <div class="name-email-field">
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nome"
+          title="Seu nome é requerido"
+          required
+        />
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail:" />
+      </div>
+      <div class="radioButton-sexo">
+        <span>Sexo:</span>
+        <input type="radio" name="sexo" id="masculino" value="masculino" />
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="sexo" id="feminino" value="feminino" />
+        <label for="feminino">Feminino</label>
+      </div>
+      <div class="mensagem-input">
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="20"></textarea>
+      </div>
+      <div id="checkbox-optinal-id">
+        <input
+          type="checkbox"
+          name="CheckboxOptional"
+          id="CheckboxOptional"
+          value="CheckboxOptional"
+          checked
+        />
+        <label for="CheckboxOptional"
+          >Gostaria de receber notícias do site.</label
+        >
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 40%;
+        background-color: #fff;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 2rem 2rem 0 0;
+        /* borda com sombra só no right e bottom*/
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.35);
+        padding: 1rem;
+      }
+      .h1-form {
+        display: flex;
+        font-size: 1.75rem;
+        color: #ffffff;
+        width: 109%;
+        height: 3rem;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(4, 99, 241);
+        border-radius: 2rem 2rem 0 0;
+        margin: -1rem -1rem 1rem -1rem;
+      }
+      .name-email-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .radioButton-sexo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .mensagem-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 4rem;
+        gap: 0.5rem;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 1.5rem;
+        margin-top: 1rem;
+      }
+      #CheckboxOptional:checked {
+        background-color: black;
+        border: 1px solid white;
+        color: white; 
+      }
+    </style>
+  </body>
 </html>
